@@ -13,7 +13,7 @@ public class RegistrationTests extends TestBase {
                 .setUserNumber("1234567890")
                 .setDateOfBirth("10", "September", "2023")
                 .setSubjects("Maths")
-                .upLoadPictureInput("qwe.png")
+                //.upLoadPictureInput("qwe.png")
                 .selectHobbies("Sports")
                 .setCurrentAddress("Address")
                 .selectStateCity("NCR", "Delhi")
