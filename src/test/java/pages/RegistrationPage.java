@@ -2,12 +2,15 @@ package pages;
 
 import com.codeborne.selenide.SelenideElement;
 import pages.components.CalendarComponent;
+import pages.components.CheckResultComponent;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
 public class RegistrationPage {
+
+    CheckResultComponent checkResultComponent = new CheckResultComponent();
 
     CalendarComponent calendar = new CalendarComponent();
     SelenideElement titleLabel = $(".practice-form-wrapper"),
@@ -98,8 +101,12 @@ public class RegistrationPage {
         return this;
     }
 
-    public RegistrationPage submit() {
+    public void submit() {
         submit.click();
+    }
+
+    public RegistrationPage checkResult(String key, String value) {
+        checkResultComponent.checkResult(key, value);
         return this;
     }
 }

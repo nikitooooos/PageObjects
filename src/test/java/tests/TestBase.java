@@ -10,7 +10,6 @@ public class TestBase {
 
     RegistrationPage registrationPage = new RegistrationPage();
     TextBoxPage textBoxPage = new TextBoxPage();
-    CheckResultComponent checkComponent = new CheckResultComponent();
 
     @BeforeAll
     static void beforeAll() {

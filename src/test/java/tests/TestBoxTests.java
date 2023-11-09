@@ -12,9 +12,9 @@ public class TestBoxTests extends TestBase{
                 .setPermanentAddress("Saint-Petersburg")
                 .clickSubmit();
 
-        checkComponent.checkResultTextBoxPage("Name:", "Nikita Postnikov")
-                .checkResultTextBoxPage("Email:", "nikita.postnikov.00@gmail.com")
-                .checkResultTextBoxPage("Current Address :", "Saint-Petersburg")
-                .checkResultTextBoxPage("Permananet Address :", "Saint-Petersburg");
+        textBoxPage.checkResultTextBox("Name:", "Nikita Postnikov")
+                .checkResultTextBox("Email:", "nikita.postnikov.00@gmail.com")
+                .checkResultTextBox("Current Address :", "Saint-Petersburg")
+                .checkResultTextBox("Permananet Address :", "Saint-Petersburg");
     }
 }

@@ -13,7 +13,7 @@ public class RegistrationTests extends TestBase {
                 .setUserNumber("1234567890")
                 .setDateOfBirth("10", "September", "2023")
                 .setSubjects("Maths")
-                //.upLoadPictureInput("qwe.png")
+                .upLoadPictureInput("qwe.jpg")
                 .selectHobbies("Sports")
                 .setCurrentAddress("Address")
                 .selectStateCity("NCR", "Delhi")
@@ -25,6 +25,7 @@ public class RegistrationTests extends TestBase {
                 .checkResult("Mobile", "1234567890")
                 .checkResult("Date of Birth", "10 September,2023")
                 .checkResult("Subjects", "Maths")
+                .checkResult("Picture", "qwe.jpg")
                 .checkResult("Hobbies", "Sports")
                 .checkResult("Address", "Address")
                 .checkResult("State and City", "NCR Delhi");
